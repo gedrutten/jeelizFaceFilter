@@ -129,6 +129,7 @@ function main(){
   JEEFACEFILTERAPI.init({
     canvasId: 'jeeFaceFilterCanvas',
     NNCpath: '../../../dist/', // root of NNC.json file
+    facingMode: 'environment', //to use the rear camera, set to 'environment'; front camera 'user'
     callbackReady: function(errCode, spec){
       if (errCode){
         console.log('AN ERROR HAPPENS. SORRY BRO :( . ERR =', errCode);
