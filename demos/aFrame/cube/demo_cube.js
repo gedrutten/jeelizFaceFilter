@@ -130,6 +130,7 @@ function main(){
     canvasId: 'jeeFaceFilterCanvas',
     NNCpath: '../../../dist/', // root of NNC.json file
     facingMode: 'environment', //to use the rear camera, set to 'environment'; front camera 'user'
+    flipX: true,
     callbackReady: function(errCode, spec){
       if (errCode){
         console.log('AN ERROR HAPPENS. SORRY BRO :( . ERR =', errCode);
